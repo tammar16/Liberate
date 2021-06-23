@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- https://www.freecodecamp.org/news/how-to-center-objects-using-css/#how-to-center-a-div-horizontally-vertically-using-css-grid -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liberate</title>
+
     <style>
-        body {
-  font-family: sans-serif;
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            }
+
+        .container{
+            height: 100vh;
+			background-color: steelblue;
+   border: 10px solid black;
+            }
+
+            .box-1{
+   /* width: 120px;
+   height: 120px; */
+   /* background-color: skyblue;
+   border: 2px solid black; */
+   font-size: 40px;
 }
 
-/* Make content area fill the entire browser window */
-html,
-.fullscreen {
-  display: flex;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
-/* Center the content in the browser window */
-.container {
-  margin: auto;
-  text-align: center;
-}
+/* .container{
+   height: 100vh;
+   display: grid;
+    
 
-.title {
-  font-size: 4rem;
+   align-content: center;
+   justify-content: center;
+} */
+
+
+/*.container{
+   height: 100vh;
+   display: grid;
+    
+align-items: center;
+   justify-items: center;
+}*/
+
+.container{
+   height: 100vh;
+   display: grid;
+   
+   place-content: center;
 }
 
     </style>
 </head>
-<body class="fullscreen">
+<body>
     <div class="container">
-      <h1 class="title">Liberate</h1>
-    </div>
+        <p class="box-1">Liberate</p>
+     </div>
 </body>
 </html>
